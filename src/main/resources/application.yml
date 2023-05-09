@@ -1,0 +1,18 @@
+tomcat:
+  ajp:
+    protocol: AJP/1.3
+    port: 8009
+    address: 0.0.0.0
+    allowedRequestAttributesPattern: .*
+server:
+  port: 8082
+camel:
+  springboot:
+    message-history: true
+    source-location-enabled: true
+    allow-use-original-message: true
+    log-exhausted-message-body: true
+  rest:
+    component: servlet
+    context-path: /prod
+
